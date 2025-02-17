@@ -1,0 +1,68 @@
+
+/* Styles du formulaire */
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f9;
+margin: 0;
+padding: 0;
+
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+.contact-form {
+background: #ffffff;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 500px;
+}
+
+.contact-form h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+border-radius: 4px;
+border: 1px solid #ddd;
+font-size: 16px;
+}
+
+.contact-form button {
+width: 100%;
+padding: 12px;
+background-color: #4CAF50;
+color: white;
+border: none;
+font-size: 16px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.contact-form button:hover {
+background-color: #45a049;
+}
+
+.contact-options {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.contact-options a {
+text-decoration: none;
+color: #4CAF50;
+font-size: 16px;
+}
+
+.contact-options a:hover {
+color: #45a049;
+}

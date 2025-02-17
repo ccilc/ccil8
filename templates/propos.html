@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/propos.css'%}">
+    <title>Document</title>
+</head>
+<body>
+<section class="container-fluid about">
+        <div class="container">
+            <div class="row">
+                <h2 id="about" > A propos de CCIL </h2>
+                <hr class="separator">
+                <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+
+                </article>
+            </div>
+
+        </div>
+        <div class="row">
+            <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                <h2 class="et"> Etudes </h2>
+                <p class="left">
+                    CCIL est un Centre de Consultation Informatique et Logistique. Il est spécialisé dans la conception et la réalisation des sites web et des logisciel dans tous les domaines de travail. Il intervient dans la gestion des flux entrants et sortants des structure à sa charge.
+                </p>
+
+            </article>
+            <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                <h2 class="exp"> Expérience </h2>
+                <p class="center">
+                    CCIL est un Centre de Consultation Informatique et Logistique. Il est spécialisé dans la conception et la réalisation des sites web et des logisciel dans tous les domaines de travail. Il intervient dans la gestion des flux entrants et sortants des structure à sa charge.
+                </p>
+
+            </article>
+            <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                <h2 class="hob"> Hobbies </h2>
+                <p class="right">
+                    CCIL est un Centre de Consultation Informatique et Logistique. Il est spécialisé dans la conception et la réalisation des sites web et des logisciel dans tous les domaines de travail. Il intervient dans la gestion des flux entrants et sortants des structure à sa charge.
+
+                </p>
+
+            </article>
+        </div>
+
+    </section>
+</body>
+</html>
+{% endblock %}

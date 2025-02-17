@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5 mb-5">       <!-- mt pour mettre de l'espace en en bas et mb pour le haut-->
+    <h3 class="mb-3"> </h3>   <!-- mb-3 pour mettre de l'espace en haut-->
+    <div class="row">
+        <div class ="col-lg-4">
+            <div class="card shadow" style="width: 18rem;">
+  <img src="https://media.istockphoto.com/id/1331465591/fr/photo/rendu-3d-dune-piscine-dh%C3%B4tel-de-luxe.jpg?s=612x612&w=0&k=20&c=W1QH2SkYII7nGrQLqIFyP4Q3wAz_faITdHkSNWr519U=" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Le Burj-al-Arab à Dubaï</h5>
+    <p class="card-text">Situé sur une île privée en plein cœur de Dubaï, le Burj-al-Arab est le plus grand palace du monde. Auto-proclamé 7 étoiles, il propose des suites et cabanes de luxe avec vue sur mer ainsi que 9 restaurants gastronomiques. Pour se rendre à l’hôtel, les clients les plus fortunés empruntent soit l’une des Rolls-Royce de l’établissement, soit un hélicoptère. La chambre double est disponible à partir de 1 900€..</p>
+    <a href="{% url 'visite'%}" class="btn btn-warning">Visitez</a>
+      <a href="{%url 'login'%}" class="btn btn-success">Réservez</a>
+  </div>
+</div>
+
+        </div>
+         <div class ="col-lg-4">
+            <div class="card shadow" style="width: 18rem;">    <!-- shadow pour les bordures d'images-->
+  <img src="https://www.shutterstock.com/image-photo/interior-luxury-hotel-lobby-260nw-2488061215.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Grand Hotel Les Trois Rois, à Bale en Suisse</h5>
+    <p class="card-text">Cet hôtel, situé au cœur de la ville de Bâle, surplombe le Rhin qui traverse la France, L’Allemagne et la Suisse. À partir de 1 800 € la nuit pour une chambre avec lit double, ce luxueux palace vous offre une expérience de “roi” comme son nom l’indique… On y trouve des chambres à la décoration princière, ainsi qu’une suite “rooftop” avec jacuzzi.</p>
+    <a href="{%url 'visite'%}" class="btn btn-primary">Visitez</a>
+      <a href="{%url 'login'%}" class="btn btn-primary">Réservez</a>
+  </div>
+</div>
+
+        </div>
+         <div class ="col-lg-4">
+            <div class="card shadow" style="width: 18rem;">
+  <img src="https://static.vecteezy.com/ti/photos-gratuite/t2/17235778-piscine-de-plage-tropicale-avec-vue-sur-la-mer-sans-fin-palmiers-et-chaises-de-plage-parasols-terrasse-en-bois-vacances-d-ete-de-luxe-et-concept-de-vacances-paysage-de-plage-banniere-de-concept-d-hotel-de-villegiature-chaise-longue-photo.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Le Boulders Resort & Spa en Arizona</h5>
+    <p class="card-text">Perdu au coeur du désert de Sonora en Arizona, le Boulders est un vaste complexe hôtelier composé de deux parcours de golf, d’un spa, de quatre piscines, d’une salle de sport et de sept restaurants.
+
+Cet établissement se suffit à lui seul pour passer des vacances inoubliables grâce à ses cours de yoga, ses séances de pilates, ses parcours de golf et ses cours de tennis.</p>
+    <a href="{%url 'visite'%}" class="btn btn-primary">Visitez</a>
+      <a href="{%url 'login'%}" class="btn btn-primary">Réservez</a>
+  </div>
+</div>
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

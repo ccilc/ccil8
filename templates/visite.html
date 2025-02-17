@@ -1,0 +1,87 @@
+{% extends 'base.html'%}
+{% block content %}
+{% load static %}
+
+
+
+
+
+
+<div class="bande-passante-container">
+        <div class="bande-passante text-white"> <center><h3> Un cadre sûr pour une meilleure détente </h3></center></div>
+</div>
+<!--
+<center>
+    <h1> Un cadre sûr pour une meilleure détente </h1>
+</center>
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Cartes</title>
+    <!-- Lier le fichier CSS -->
+    <link rel="stylesheet" href="{% static 'css/visite.css' %}">
+</head>
+<body>
+    <div class="card-container">
+        <!-- Carte 1 -->
+        <div class="card">
+            <img src="{% static 'images/image_2.jpg'%}" alt="Chambre 1" class="card-image">
+            <div class="card-content">
+                <h3>Chambre 1</h3>
+                <p>Description de la Chambre 1.</p>
+                <a href="{%url 'login'%}" class="reserved-btn">Réservez</a>
+            </div>
+        </div>
+        <!-- Carte 2 -->
+        <div class="card">
+            <img src="{% static 'images/image_1.jpg' %}" alt="Chambre 2" class="card-image">
+            <div class="card-content">
+                <h3>Chambre 2</h3>
+                <p>Description de la Chambre 2.</p>
+                <a href="{%url 'login'%}" class="reserved-btn">Réservez</a>
+            </div>
+        </div>
+        <!-- Carte 3 -->
+        <div class="card">
+            <img src="{% static 'images/image_4.jpg' %}" alt=" Chambre 3" class="card-image">
+            <div class="card-content">
+                <h3>Chambre 3</h3>
+                <p>Description de la Chambre 3.</p>
+                <a href="{%url 'login'%}" class="reserved-btn">Réservez</a>
+            </div>
+        </div>
+        <!-- Carte 4 -->
+        <div class="card">
+            <img src="{% static 'images/image_5.jpg' %}" alt="Chambre 4" class="card-image">
+            <div class="card-content">
+                <h3>Chambre 4</h3>
+                <p>Description de la Chambre 4.</p>
+                <a href="{%url 'login'%}" class="reserved-btn">Réservez</a>
+            </div>
+        </div>
+        <!-- Carte 5 -->
+        <div class="card">
+            <img src="{% static 'images/image_6.jpg' %}" alt="Chambre 5" class="card-image">
+            <div class="card-content">
+                <h3>Chambre 5</h3>
+                <p>Description de la Chambre 5.</p>
+                <a href="{%url 'login'%}" class="reserved-btn">Réservez</a>
+            </div>
+        </div>
+        <!-- Carte 6 -->
+        <div class="card">
+            <img src="{% static 'images/image_7.jpg' %}" alt="Chambre 6" class="card-image">
+            <div class="card-content">
+                <h3>Chambre 6</h3>
+                <p>Description de la Chambre 6.</p>
+                <a href="{%url 'login'%}" class="reserved-btn">Réservez</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+{% endblock content %}

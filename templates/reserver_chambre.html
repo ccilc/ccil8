@@ -1,0 +1,28 @@
+<!-- reserver_chambre.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver une Chambre</title>
+</head>
+<body>
+    <h1>Réserver la chambre "{{ chambre.get_type_chambre_display }}"</h1>
+    <h3>Prix par nuit : {{ chambre.prix_journalier }} €</h3>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Valider la réservation</button>
+    </form>
+
+    <br>
+    <a href="{% url 'chambre_list' %}">Retour à la liste des chambres</a>
+</body>
+</html>
+
+
+{% endblock content %}

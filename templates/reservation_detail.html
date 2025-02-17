@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!-- addandshow.html -->
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver une Chambre</title>
+</head>
+<body>
+    <h1>Liste des Chambres</h1>
+    <ul>
+        {% for chambre in chambres %}
+        <li>
+            <h2>{{ chambre.get_type_chambre_display }} - {{ chambre.prix_journalier }} €/nuit</h2>
+            <a href="{% url 'reserver_chambre' chambre.id %}">Réserver cette chambre</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% if chambre %}
+    <h2>Réservation pour {{ chambre.get_type_chambre_display }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Réserver</button>
+    </form>
+    {% endif %}
+
+    {% if reservation %}
+    <h2>Réservation confirmée</h2>
+    <p>Nom du client: {{ reservation.nom_client }}</p>
+    <p>Chambre: {{ reservation.chambre.get_type_chambre_display }}</p>
+    <p>Du {{ reservation.date_debut }} au {{ reservation.date_fin }}</p>
+    <p>Montant total: {{ reservation.montant_total }} €</p>
+    {% endif %}
+</body>
+</html>
+
+
+{% endblock content %}

@@ -1,0 +1,126 @@
+/*
+h1{
+    color : blue;
+    font-size : 50px;
+}
+
+*/
+
+
+.bande-passante-container {
+    position: relative;
+    width: 100%;
+    height: 40px;                         /* hauteur de la bande fixe */
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.bande-passante {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 70%;                        /* Largeur de la bande passante*/
+    height: 100%;
+    background: linear-gradient(90deg, #4c65af, #624ac3, #4f4caf);
+    animation: mouvement 20s linear infinite;
+}
+
+@keyframes mouvement {
+    0% {
+        left: 10%;
+    }
+    0% {
+        left: 80%;
+    }
+}
+
+/* Reset des marges et du padding de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Conteneur des cartes */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Carte */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+/* Image de la carte */
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Contenu de la carte */
+.card-content {
+    padding: 10px;
+}
+
+/* Titre de la carte */
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description de la carte */
+.card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Bouton réservé */
+.reserved-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.reserved-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur mobile */
+    }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 colonne sur très petits écrans */
+    }
+}

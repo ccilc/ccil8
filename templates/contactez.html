@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{%block content%}
+{% load static %}
+<h3> Merci de bien vouloir nous joindre par le formulaire ci-après :</h3>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css'%}">
+</head>
+<body>
+
+    <div class="contact-form">
+        <h2>Nous contactez</h2>
+        <form action="mailto:mailjcat@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer par email</button>
+        </form>
+
+        <div class="contact-options">
+            <a href="tel:+2290197037526">Appeler au 2290197037526</a>
+            <a href="https://wa.me/97037526" target="_blank">Contacter via WhatsApp</a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+{%endblock%}
